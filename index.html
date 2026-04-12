@@ -42,12 +42,6 @@
             <li class="nav-item">
               <a class="nav-link" href="#about">About</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#portfolio">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
           </ul>
         </div>
       </div>
@@ -150,43 +144,6 @@
           </div>
         </div>
       </section>
-
-      <section id="contact" class="contact-section py-5">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-lg-8">
-              <h2 class="fw-bold display-6 text-center mb-5">Get In Touch</h2>
-
-              <form class="contact-form" id="contactForm">
-                <div class="row">
-                  <div class="col-md-6 form-group">
-                    <label for="firstName" class="form-label">First Name</label>
-                    <input type="text" class="form-control" id="firstName" name="firstName" required />
-                  </div>
-                  <div class="col-md-6 form-group">
-                    <label for="lastName" class="form-label">Last Name</label>
-                    <input type="text" class="form-control" id="lastName" name="lastName" required />
-                  </div>
-                </div>
-
-                <div class="form-group">
-                  <label for="email" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="email" name="email" required />
-                </div>
-
-                <div class="form-group">
-                  <label for="message" class="form-label">Message</label>
-                  <textarea class="form-control" id="message" name="message" rows="6" required></textarea>
-                </div>
-
-                <div class="d-grid gap-2">
-                  <button type="submit" class="btn btn-primary btn-lg">Submit</button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
     </main>
 
     <footer class="bg-dark text-light text-center py-4 fs-5">
@@ -221,22 +178,6 @@
         window.addEventListener('resize', adjustPadding);
         window.addEventListener('load', adjustPadding);
       })();
-
-      // Handle form submission
-      document.getElementById('contactForm').addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        const firstName = document.getElementById('firstName').value;
-        const lastName = document.getElementById('lastName').value;
-        const email = document.getElementById('email').value;
-        const message = document.getElementById('message').value;
-        
-        // Create mailto link
-        const subject = encodeURIComponent('Contact Form Submission from ' + firstName + ' ' + lastName);
-        const body = encodeURIComponent(message + '\n\nFrom: ' + firstName + ' ' + lastName + '\nEmail: ' + email);
-        
-        window.location.href = 'mailto:alannarobbert@gmail.com?subject=' + subject + '&body=' + body;
-      });
     </script>
   </body>
 </html>
