@@ -1,33 +1,379 @@
 <!DOCTYPE html>
-
 <html lang="en" data-theme="light">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Alanna Robbert</title>
+        <meta name="description" content="Alanna Robbert - Journalism portfolio featuring data-driven stories and investigative reporting" />
+        <meta name="keywords" content="Alanna Robbert, journalism, data journalism, University of Florida, investigative reporting" />
+        <meta name="author" content="Alanna Robbert" />
+        <title>All Work - Alanna Robbert</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
         <link rel="stylesheet" href="css/work.css" />
+        <script src="https://kit.fontawesome.com/e0b8a3b78e.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <main>
+    <nav class="navbar navbar-expand navbar-dark bg-primary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Alanna Fitzgerald Robbert</a>
+
+        <div class="navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto align-items-center">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="work.html">All Work</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+        <main class="works-main">
+            <div class="container">
+
+                <header class="page-header">
+                    <h1 class="page-title">All Work</h1>
+                </header>
+
+                <div class="search-wrapper">
+                    <input type="text" id="story-search" class="search-input" placeholder="Search stories..." aria-label="Search stories" />
+                    <div class="filter-pills" role="group" aria-label="Filter by tag">
+                        <button class="filter-pill active" data-filter="all">All</button>
+                        <button class="filter-pill" data-filter="data">Data</button>
+                        <button class="filter-pill" data-filter="other">Other</button>
+                    </div>
+                </div>
+
+                <div id="no-results" class="no-results" style="display: none;">
+                    <p>No stories found. Try different keywords.</p>
+                </div>
+
+                <!-- 2026 -->
+                <section class="year-group" data-year="2026">
+                    <div class="year-header">
+                        <span class="year-label">2026</span>
+                        <div class="year-line"></div>
+                    </div>
+                    <div class="stories-list">
+
+                        <a class="story-row" href="https://www.alligator.org/article/2026/03/bicycle-thefts" target="_blank" rel="noopener">
+                            <div class="story-body">
+                                <div class="story-tags"><span class="tag">data</span></div>
+                                <h2 class="story-title">5 years of UF theft data show riskiest locations, months for swiped bikes</h2>
+                                <p class="story-desc">Analysis of bicycle theft patterns across University of Florida campus, identifying high-risk locations and seasonal trends in theft reports.</p>
+                            </div>
+                            <div class="story-meta">
+                                <span class="story-pub">The Independent Florida Alligator</span>
+                                <span class="story-date">March 9, 2026</span>
+                                <span class="story-arrow">→</span>
+                            </div>
+                        </a>
+
+                    </div>
+                </section>
+
+                <!-- 2025 -->
+                <section class="year-group" data-year="2025">
+                    <div class="year-header">
+                        <span class="year-label">2025</span>
+                        <div class="year-line"></div>
+                    </div>
+                    <div class="stories-list">
+
+                        <a class="story-row" href="https://www.wuft.org/environment/2025-12-29/urban-waste-rural-consequences" target="_blank" rel="noopener">
+                            <div class="story-body">
+                                <h2 class="story-title">Urban Waste, Rural Consequences</h2>
+                                <p class="story-desc">Examination of how rural Florida counties receive sewage sludge from urban areas for land application, raising environmental and health concerns while excluding rural residents from planning decisions.</p>
+                            </div>
+                            <div class="story-meta">
+                                <span class="story-pub">WUFT</span>
+                                <span class="story-date">December 29, 2025</span>
+                                <span class="story-arrow">→</span>
+                            </div>
+                        </a>
+
+                        <a class="story-row" href="https://www.alligator.org/article/2025/12/marston-will-offer-later-hours-this-spring-but-data-shows-library-use-drops-off-at-night" target="_blank" rel="noopener">
+                            <div class="story-body">
+                                <div class="story-tags"><span class="tag">data</span></div>
+                                <h2 class="story-title">Marston will offer later hours this Spring. But data shows library use drops off at night.</h2>
+                                <p class="story-desc">Investigation into library usage patterns and the decision to extend Marston Science Library hours despite low nighttime usage data.</p>
+                            </div>
+                            <div class="story-meta">
+                                <span class="story-pub">The Independent Florida Alligator</span>
+                                <span class="story-date">December 27, 2025</span>
+                                <span class="story-arrow">→</span>
+                            </div>
+                        </a>
+
+                        <a class="story-row" href="https://www.alligator.org/article/2025/11/unemployment-up-among-recent-college-graduates-since-covid-19-pandemic" target="_blank" rel="noopener">
+                            <div class="story-body">
+                                <h2 class="story-title">Unemployment up among recent college graduates since COVID-19 pandemic</h2>
+                                <p class="story-desc">Data analysis revealing increased unemployment rates among recent college graduates in the post-COVID job market.</p>
+                            </div>
+                            <div class="story-meta">
+                                <span class="story-pub">The Independent Florida Alligator</span>
+                                <span class="story-date">November 18, 2025</span>
+                                <span class="story-arrow">→</span>
+                            </div>
+                        </a>
+
+                        <a class="story-row" href="https://www.alligator.org/article/2025/09/sg-voter-turnout-data" target="_blank" rel="noopener">
+                            <div class="story-body">
+                                <div class="story-tags"><span class="tag">data</span></div>
+                                <h2 class="story-title">UF Student Government voting turnout is low. But not lower than similar schools.</h2>
+                                <p class="story-desc">Comparative analysis of student government election turnout rates at UF compared to similar large public universities.</p>
+                            </div>
+                            <div class="story-meta">
+                                <span class="story-pub">The Independent Florida Alligator</span>
+                                <span class="story-date">September 26, 2025</span>
+                                <span class="story-arrow">→</span>
+                            </div>
+                        </a>
+
+                        <a class="story-row" href="https://www.floridamuseum.ufl.edu/membership/memos/behind-the-scenes-in-the-butterfly-rainforest/" target="_blank" rel="noopener">
+                            <div class="story-body">
+                                <div class="story-tags"><span class="tag other">other</span></div>
+                                <h2 class="story-title">Behind the Scenes in the Butterfly Rainforest</h2>
+                                <p class="story-desc">A look at maintenance and improvement activities at the Florida Museum's Butterfly Rainforest exhibit during temporary closure, including animal care, infrastructure upgrades, and planned renovations.</p>
+                            </div>
+                            <div class="story-meta">
+                                <span class="story-pub">Florida Museum of Natural History</span>
+                                <span class="story-date">August 21, 2025</span>
+                                <span class="story-arrow">→</span>
+                            </div>
+                        </a>
+
+                        <a class="story-row" href="https://www.alligator.org/article/2025/08/sexual-health-resources-on-campus-across-gainesville-are-available-for-all" target="_blank" rel="noopener">
+                            <div class="story-body">
+                                <h2 class="story-title">Sexual health resources on campus, across Gainesville are available for all</h2>
+                                <p class="story-desc">Comprehensive guide to sexual health resources available to UF students and Gainesville community members.</p>
+                            </div>
+                            <div class="story-meta">
+                                <span class="story-pub">The Independent Florida Alligator</span>
+                                <span class="story-date">August 14, 2025</span>
+                                <span class="story-arrow">→</span>
+                            </div>
+                        </a>
+
+                        <a class="story-row" href="https://www.alligator.org/article/2025/08/school-supplies-creativity-made-affordable-through-reused-supplies" target="_blank" rel="noopener">
+                            <div class="story-body">
+                                <h2 class="story-title">School supplies, creativity made affordable through reused supplies</h2>
+                                <p class="story-desc">Investigation into how reused school supplies make art programs more accessible for children despite budget constraints.</p>
+                            </div>
+                            <div class="story-meta">
+                                <span class="story-pub">The Independent Florida Alligator</span>
+                                <span class="story-date">August 8, 2025</span>
+                                <span class="story-arrow">→</span>
+                            </div>
+                        </a>
+
+                        <a class="story-row" href="https://www.alligator.org/article/2025/07/impacts-of-1990-gainesville-murders-remain-strong-especially-for-college-aged-women" target="_blank" rel="noopener">
+                            <div class="story-body">
+                                <h2 class="story-title">Impacts of 1990 Gainesville murders remain strong, especially for college-aged women</h2>
+                                <p class="story-desc">Examination of the lasting psychological and community impacts of the Gainesville Student Murders 35 years later.</p>
+                            </div>
+                            <div class="story-meta">
+                                <span class="story-pub">The Independent Florida Alligator</span>
+                                <span class="story-date">July 31, 2025</span>
+                                <span class="story-arrow">→</span>
+                            </div>
+                        </a>
+
+                        <a class="story-row" href="https://www.alligator.org/article/2025/07/constant-changes-to-rts-bus-schedule-may-disrupt-access-to-health-care" target="_blank" rel="noopener">
+                            <div class="story-body">
+                                <h2 class="story-title">Constant changes to RTS bus schedule may disrupt access to health care</h2>
+                                <p class="story-desc">Investigation into how frequent RTS bus schedule changes impact healthcare workers' ability to access medical facilities.</p>
+                            </div>
+                            <div class="story-meta">
+                                <span class="story-pub">The Independent Florida Alligator</span>
+                                <span class="story-date">July 21, 2025</span>
+                                <span class="story-arrow">→</span>
+                            </div>
+                        </a>
+
+                        <a class="story-row" href="https://www.alligator.org/article/2025/07/local-nonprofit-teaches-gardening-skills-to-adults-with-disabilities" target="_blank" rel="noopener">
+                            <div class="story-body">
+                                <h2 class="story-title">Local nonprofit teaches gardening skills to adults with disabilities</h2>
+                                <p class="story-desc">Profile of a local nonprofit that provides gardening education and skills training for adults with disabilities in Gainesville.</p>
+                            </div>
+                            <div class="story-meta">
+                                <span class="story-pub">The Independent Florida Alligator</span>
+                                <span class="story-date">July 18, 2025</span>
+                                <span class="story-arrow">→</span>
+                            </div>
+                        </a>
+
+                        <a class="story-row" href="https://www.alligator.org/article/2025/07/books-for-prisoners-project-bridges-volunteers-and-prisoners" target="_blank" rel="noopener">
+                            <div class="story-body">
+                                <h2 class="story-title">Books-for-Prisoners project bridges volunteers and prisoners</h2>
+                                <p class="story-desc">Exploration of a community program that connects volunteers with incarcerated individuals through book donations and correspondence.</p>
+                            </div>
+                            <div class="story-meta">
+                                <span class="story-pub">The Independent Florida Alligator</span>
+                                <span class="story-date">July 11, 2025</span>
+                                <span class="story-arrow">→</span>
+                            </div>
+                        </a>
+
+                        <a class="story-row" href="https://www.alligator.org/article/2025/06/budget-bill-town-hall" target="_blank" rel="noopener">
+                            <div class="story-body">
+                                <h2 class="story-title">Alachua County residents raise their concerns about budget bill</h2>
+                                <p class="story-desc">Coverage of community concerns and town hall discussion about the One Big Beautiful Bill Act and its potential local impacts.</p>
+                            </div>
+                            <div class="story-meta">
+                                <span class="story-pub">The Independent Florida Alligator</span>
+                                <span class="story-date">June 28, 2025</span>
+                                <span class="story-arrow">→</span>
+                            </div>
+                        </a>
+
+                        <a class="story-row" href="https://www.alligator.org/article/2025/06/freedom-fest-celebrates-emancipation-day-juneteenth" target="_blank" rel="noopener">
+                            <div class="story-body">
+                                <h2 class="story-title">Freedom Fest celebrates Emancipation Day, Juneteenth</h2>
+                                <p class="story-desc">Coverage of Gainesville's Freedom Fest event celebrating Emancipation Day and Juneteenth with music, food, and community activities.</p>
+                            </div>
+                            <div class="story-meta">
+                                <span class="story-pub">The Independent Florida Alligator</span>
+                                <span class="story-date">June 23, 2025</span>
+                                <span class="story-arrow">→</span>
+                            </div>
+                        </a>
+
+                        <a class="story-row" href="https://www.alligator.org/article/2025/06/cotton-club-hosts-sold-out-juneteenth-breakfast-and-black-music-month-celebration" target="_blank" rel="noopener">
+                            <div class="story-body">
+                                <h2 class="story-title">Cotton Club hosts sold-out Juneteenth breakfast and Black Music Month celebration</h2>
+                                <p class="story-desc">Report on the Cotton Club's sold-out Juneteenth breakfast event featuring performances, speeches, and celebration of Black Music Month.</p>
+                            </div>
+                            <div class="story-meta">
+                                <span class="story-pub">The Independent Florida Alligator</span>
+                                <span class="story-date">June 20, 2025</span>
+                                <span class="story-arrow">→</span>
+                            </div>
+                        </a>
+
+                        <a class="story-row" href="https://www.alligator.org/article/2025/05/transfer-students-find-community-at-uf" target="_blank" rel="noopener">
+                            <div class="story-body">
+                                <div class="story-tags"><span class="tag">data</span></div>
+                                <h2 class="story-title">Transfer students find community at UF</h2>
+                                <p class="story-desc">Investigation into the experiences of transfer students at UF and efforts to build community and support networks for this underrepresented group.</p>
+                            </div>
+                            <div class="story-meta">
+                                <span class="story-pub">The Independent Florida Alligator</span>
+                                <span class="story-date">May 28, 2025</span>
+                                <span class="story-arrow">→</span>
+                            </div>
+                        </a>
+
+                        <a class="story-row" href="https://www.wuft.org/environment/2025-04-11/the-invasion-of-the-fuzz-tussock-moth-caterpillars-crawl-across-north-central-florida" target="_blank" rel="noopener">
+                            <div class="story-body">
+                                <h2 class="story-title">The invasion of the fuzz: Tussock moth caterpillars crawl across north central Florida</h2>
+                                <p class="story-desc">Native tussock moth caterpillars have become prevalent across Alachua County during spring season, with experts weighing in on public reactions and safe handling of the fuzzy insects.</p>
+                            </div>
+                            <div class="story-meta">
+                                <span class="story-pub">WUFT</span>
+                                <span class="story-date">April 11, 2025</span>
+                                <span class="story-arrow">→</span>
+                            </div>
+                        </a>
+
+                        <a class="story-row" href="https://gulfscholars.bobgrahamcenter.ufl.edu/learning-through-service-my-journey-to-pine-island-with-uf-gulf-scholars-and-gatorcorps/" target="_blank" rel="noopener">
+                            <div class="story-body">
+                                <div class="story-tags"><span class="tag other">other</span></div>
+                                <h2 class="story-title">Learning through service: My journey to Pine Island with UF Gulf Scholars and GatorCorps</h2>
+                                <p class="story-desc">Personal account of community service work with UF Gulf Scholars program, focusing on environmental education and conservation.</p>
+                            </div>
+                            <div class="story-meta">
+                                <span class="story-pub">UF Gulf Scholars Program</span>
+                                <span class="story-date">2025</span>
+                                <span class="story-arrow">→</span>
+                            </div>
+                        </a>
+
+                    </div>
+                </section>
+
+            </div>
         </main>
+
+        <footer class="site-footer">
+            <p class="mb-3">Copyright &copy; 2025 Alanna Robbert</p>
+            <div class="d-flex justify-content-center gap-4">
+                <a href="mailto:alannarobbert@gmail.com" aria-label="Email">
+                    <i class="fas fa-envelope fa-lg"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/alanna-robbert-32264529b" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin fa-lg"></i>
+                </a>
+                <a href="https://github.com/alanna-robbert" aria-label="GitHub">
+                    <i class="fab fa-github fa-lg"></i>
+                </a>
+            </div>
+        </footer>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
         <script>
+        // Navbar padding
         (function () {
             const navbar = document.querySelector('.navbar.fixed-top');
             if (!navbar) return;
-
             function adjustPadding() {
-            const height = navbar.offsetHeight || 56;
-            document.body.style.paddingTop = height + 'px';
+                document.body.style.paddingTop = (navbar.offsetHeight || 56) + 'px';
             }
-
-            // Initial set and when layout might change
             adjustPadding();
             window.addEventListener('resize', adjustPadding);
             window.addEventListener('load', adjustPadding);
         })();
-        </script>       
+
+        // Search + tag filter
+        (function () {
+            const input = document.getElementById('story-search');
+            const pills = document.querySelectorAll('.filter-pill');
+            const rows = document.querySelectorAll('.story-row');
+            const yearGroups = document.querySelectorAll('.year-group');
+            const noResults = document.getElementById('no-results');
+
+            let activeTag = 'all';
+
+            function filterRows() {
+                const term = input.value.toLowerCase().trim();
+                let totalVisible = 0;
+
+                rows.forEach(function (row) {
+                    const text = row.textContent.toLowerCase();
+                    const tags = Array.from(row.querySelectorAll('.tag')).map(function (t) {
+                        return t.textContent.toLowerCase().trim();
+                    });
+
+                    const matchesText = term === '' || text.includes(term);
+                    const matchesTag = activeTag === 'all' || tags.includes(activeTag);
+
+                    const show = matchesText && matchesTag;
+                    row.style.display = show ? '' : 'none';
+                    if (show) totalVisible++;
+                });
+
+                yearGroups.forEach(function (group) {
+                    const visible = Array.from(group.querySelectorAll('.story-row')).some(
+                        function (r) { return r.style.display !== 'none'; }
+                    );
+                    group.style.display = visible ? '' : 'none';
+                });
+
+                noResults.style.display = totalVisible === 0 ? 'block' : 'none';
+            }
+
+            input.addEventListener('input', filterRows);
+
+            pills.forEach(function (pill) {
+                pill.addEventListener('click', function () {
+                    pills.forEach(function (p) { p.classList.remove('active'); });
+                    this.classList.add('active');
+                    activeTag = this.dataset.filter;
+                    filterRows();
+                });
+            });
+        })();
+        </script>
     </body>
 </html>
