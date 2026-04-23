@@ -83,6 +83,27 @@ img {
   color: #222 !important;
 }
 
+/* Featured items */
+.featured-item {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.featured-item:hover {
+  transform: translateY(-4px);
+}
+
+/* Project cards */
+.project-card {
+  background-color: #fff;
+  border-radius: 0.75rem;
+  padding: 1.75rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+}
+
+.project-card:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+
 /* Portfolio Section */
 .portfolio-section {
   background-color: #fff;
