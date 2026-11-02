@@ -138,10 +138,10 @@ h1, h2, h3 {
 }
 
 .headshot {
-  width: 285px;
+  width: 250px;
   height: 240px;
   object-fit: cover;
-  border-radius: 5px;
+  border-radius: 6px;
 }
 
 .links {
