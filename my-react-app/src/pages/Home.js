@@ -19,11 +19,13 @@ function Home() {
             I'm a journalism graduate from the University of Florida, where I specialized in data reporting,
             statistics and mapping. I combine coding and traditional reporting to tell stories through
             interactives and visualizations. My work has appeared in The Independent Florida Alligator and WUFT.
+          </p>
+          <p>
             Click to find my{' '}
             <a href={`${ASSETS}/alanna-robbert-resume.pdf`} target="_blank" rel="noopener noreferrer">
               resume
             </a>{' '}
-            and <Link to="/work">all of my published work</Link>.
+            and all of my <Link to="/work">published work</Link>.
           </p>
           <SocialLinks />
         </div>
