@@ -47,7 +47,7 @@ function Home() {
             onMouseLeave={() => setPlaying(false)}
             onFocus={() => setPlaying(true)}
             onBlur={() => setPlaying(false)}
-            href="https://alannafitzrobbert.com/hw-agents/index.php"
+            href="https://alanna-robbert.github.io/FL-house-reps-directory/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -65,7 +65,7 @@ function Home() {
 
           <a
             className="project-card"
-            href="https://alannafitzrobbert.com/final/index.html"
+            href="https://alanna-robbert.github.io/FDEP-pollution-incident-dashboard/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -75,12 +75,17 @@ function Home() {
             <span className="project-cta">Launch app →</span>
           </a>
 
-          <Link className="project-card" to="/work">
+          <a
+            className="project-card"
+            href="https://www.wuft.org/2026-04-29/the-global-paraquat-trail"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div className="project-media"></div>
-            <h3>Published work</h3>
-            <p>Stories and data reporting from The Independent Florida Alligator and WUFT.</p>
-            <span className="project-cta">See all work →</span>
-          </Link>
+            <h3>The Global Paraquat Trail</h3>
+            <p>China and South Korea both ban the herbicide paraquat but export it to the U.S. This story follows its international supply chain.</p>
+            <span className="project-cta">Read story →</span>
+          </a>
         </div>
       </section>
 
