@@ -4,7 +4,7 @@ import App from './App';
 test('home page shows name and link to work', () => {
   render(<App />);
   expect(screen.getByRole('heading', { name: 'Alanna Robbert' })).toBeInTheDocument();
-  expect(screen.getByRole('link', { name: /all of my published work/i })).toBeInTheDocument();
+  expect(screen.getByRole('link', { name: 'published work' })).toBeInTheDocument();
 });
 
 test('work page filters stories by topic and search', () => {
