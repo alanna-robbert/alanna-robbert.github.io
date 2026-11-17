@@ -88,6 +88,9 @@ function Home() {
 
           <ProjectCard
             href="https://www.wuft.org/2026-04-29/the-global-paraquat-trail"
+            still={`${ASSETS}/paraquat-trail-preview.png`}
+            gif={`${ASSETS}/paraquat-trail-demo.gif`}
+            alt="Screen recording of The Global Paraquat Trail story on WUFT"
             title="The Global Paraquat Trail"
             cta="Read story →"
           >
