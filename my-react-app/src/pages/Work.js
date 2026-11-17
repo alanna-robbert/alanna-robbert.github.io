@@ -30,7 +30,7 @@ function Work() {
   };
 
   useEffect(() => {
-    document.title = 'Work | Alanna Robbert';
+    document.title = 'Alanna Robbert';
   }, []);
 
   function update(changes) {
@@ -78,8 +78,10 @@ function Work() {
       </a>
 
       <nav className="topbar wrap" aria-label="Site">
-        <Link className="topbar-name" to="/">Alanna Robbert</Link>
-        <Link to="/">About</Link>
+        <span className="topbar-name">Alanna Robbert</span>
+        <Link className="topbar-home" to="/" aria-label="Home">
+          <i className="fa fa-home" aria-hidden="true"></i>
+        </Link>
       </nav>
 
       <main id="work" className="wrap" ref={workRef} tabIndex={-1}>

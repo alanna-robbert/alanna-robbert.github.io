@@ -446,3 +446,11 @@ h1, h2, h3 {
 
 /* The work list receives focus from the skip link; no outline needed. */
 main:focus { outline: none; }
+
+.topbar-home {
+  color: var(--ink);
+  font-size: 1.75rem;
+  line-height: 1;
+  text-decoration: none;
+}
+.topbar-home .fa { font-size: inherit; }

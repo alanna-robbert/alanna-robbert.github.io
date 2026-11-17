@@ -7,7 +7,7 @@ import Work from './pages/Work';
 function OnPageChange() {
   const { pathname } = useLocation();
   useEffect(() => {
-    if (pathname === '/') document.title = 'Alanna Robbert | Data Journalist';
+    if (pathname === '/') document.title = 'Alanna Robbert';
     window.scrollTo(0, 0);
   }, [pathname]);
   return null;
