@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import SocialLinks from '../components/SocialLinks';
 import Footer from '../components/Footer';
@@ -6,6 +7,9 @@ import Footer from '../components/Footer';
 const ASSETS = process.env.PUBLIC_URL + '/assets';
 
 function Home() {
+  // The demo GIF only plays while the card is hovered (or focused by keyboard).
+  const [playing, setPlaying] = useState(false);
+
   return (
     <>
       <header className="intro wrap">
@@ -34,39 +38,49 @@ function Home() {
 
       <section className="featured wrap">
         <h2>Featured work</h2>
-        <a
-          className="project-card"
-          href="https://alannafitzrobbert.com/hw-agents/index.php"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <div className="project-media">
-            <video
-              autoPlay
-              muted
-              loop
-              playsInline
-              preload="metadata"
-              poster={`${ASSETS}/house-directory-preview.png`}
-              aria-label="Screen recording of the Florida House member directory"
-            >
-              <source src={`${ASSETS}/house-directory-demo.mp4`} type="video/mp4" />
-            </video>
-          </div>
-          <h3>Florida House of Representatives Member Directory</h3>
-          <p>
-            Searchable database of the Florida House for the 2024–2026 session. Filter by party, religion,
-            city, military service, hobbies and college.
-          </p>
-          <span className="project-cta">Launch app →</span>
-        </a>
-      </section>
+        <div className="project-grid">
+          <a
+            className="project-card"
+            onMouseEnter={() => setPlaying(true)}
+            onMouseLeave={() => setPlaying(false)}
+            onFocus={() => setPlaying(true)}
+            onBlur={() => setPlaying(false)}
+            href="https://alannafitzrobbert.com/hw-agents/index.php"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="project-media">
+              <img
+                src={`${ASSETS}/house-directory-${playing ? 'demo.gif' : 'preview.png'}`}
+                alt="Screen recording of the Florida House member directory"
+                loading="lazy"
+              />
+            </div>
+            <h3>Florida House Member Directory</h3>
+            <p>Searchable database of the Florida House. Filter by party, religion, city, military service and college.</p>
+            <span className="project-cta">Launch app →</span>
+          </a>
 
-      <div className="row">
-        <div className="box"></div>
-        <div className="box"></div>
-        <div className="box"></div>
-      </div>
+          <a
+            className="project-card"
+            href="https://alannafitzrobbert.com/final/index.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="project-media"></div>
+            <h3>FL DEP Pollution Incident Dashboard</h3>
+            <p>Map, charts and county statistics for incidents in Florida's Pollution Notification Program.</p>
+            <span className="project-cta">Launch app →</span>
+          </a>
+
+          <Link className="project-card" to="/work">
+            <div className="project-media"></div>
+            <h3>Published work</h3>
+            <p>Stories and data reporting from The Independent Florida Alligator and WUFT.</p>
+            <span className="project-cta">See all work →</span>
+          </Link>
+        </div>
+      </section>
 
       <Footer />
     </>
