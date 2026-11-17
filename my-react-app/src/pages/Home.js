@@ -6,10 +6,33 @@ import Footer from '../components/Footer';
 // Files in public/ are served as-is. PUBLIC_URL makes the path work wherever the site is hosted.
 const ASSETS = process.env.PUBLIC_URL + '/assets';
 
-function Home() {
-  // The demo GIF only plays while the card is hovered (or focused by keyboard).
+// A featured-work card. If it has a GIF, the GIF only plays while the card is
+// hovered (or focused by keyboard); otherwise the still image is shown.
+function ProjectCard({ href, still, gif, alt, title, cta, children }) {
   const [playing, setPlaying] = useState(false);
 
+  return (
+    <a
+      className="project-card"
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      onMouseEnter={() => setPlaying(true)}
+      onMouseLeave={() => setPlaying(false)}
+      onFocus={() => setPlaying(true)}
+      onBlur={() => setPlaying(false)}
+    >
+      <div className="project-media">
+        {still && <img src={playing ? gif : still} alt={alt} loading="lazy" />}
+      </div>
+      <h3>{title}</h3>
+      <p>{children}</p>
+      <span className="project-cta">{cta}</span>
+    </a>
+  );
+}
+
+function Home() {
   return (
     <>
       <header className="intro wrap">
@@ -41,51 +64,35 @@ function Home() {
       <section className="featured wrap">
         <h2>Featured work</h2>
         <div className="project-grid">
-          <a
-            className="project-card"
-            onMouseEnter={() => setPlaying(true)}
-            onMouseLeave={() => setPlaying(false)}
-            onFocus={() => setPlaying(true)}
-            onBlur={() => setPlaying(false)}
+          <ProjectCard
             href="https://alanna-robbert.github.io/FL-house-reps-directory/"
-            target="_blank"
-            rel="noopener noreferrer"
+            still={`${ASSETS}/house-directory-preview.png`}
+            gif={`${ASSETS}/house-directory-demo.gif`}
+            alt="Screen recording of the Florida House member directory"
+            title="Florida House Member Directory"
+            cta="Launch app →"
           >
-            <div className="project-media">
-              <img
-                src={`${ASSETS}/house-directory-${playing ? 'demo.gif' : 'preview.png'}`}
-                alt="Screen recording of the Florida House member directory"
-                loading="lazy"
-              />
-            </div>
-            <h3>Florida House Member Directory</h3>
-            <p>Searchable database of the Florida House. Filter by party, religion, city, military service and college.</p>
-            <span className="project-cta">Launch app →</span>
-          </a>
+            Searchable database of the Florida House. Filter by party, religion, city, military service and college.
+          </ProjectCard>
 
-          <a
-            className="project-card"
+          <ProjectCard
             href="https://alanna-robbert.github.io/FDEP-pollution-incident-dashboard/"
-            target="_blank"
-            rel="noopener noreferrer"
+            still={`${ASSETS}/pollution-dashboard-preview.png`}
+            gif={`${ASSETS}/pollution-dashboard-demo.gif`}
+            alt="Screen recording of the FL DEP pollution incident dashboard"
+            title="FL DEP Pollution Incident Dashboard"
+            cta="Launch app →"
           >
-            <div className="project-media"></div>
-            <h3>FL DEP Pollution Incident Dashboard</h3>
-            <p>Map, charts and county statistics for incidents in Florida's Pollution Notification Program.</p>
-            <span className="project-cta">Launch app →</span>
-          </a>
+            Map, charts and county statistics for incidents in Florida's Pollution Notification Program.
+          </ProjectCard>
 
-          <a
-            className="project-card"
+          <ProjectCard
             href="https://www.wuft.org/2026-04-29/the-global-paraquat-trail"
-            target="_blank"
-            rel="noopener noreferrer"
+            title="The Global Paraquat Trail"
+            cta="Read story →"
           >
-            <div className="project-media"></div>
-            <h3>The Global Paraquat Trail</h3>
-            <p>China and South Korea both ban the herbicide paraquat but export it to the U.S. This story follows its international supply chain.</p>
-            <span className="project-cta">Read story →</span>
-          </a>
+            China and South Korea both ban the herbicide paraquat but export it to the U.S. This story follows its international supply chain.
+          </ProjectCard>
         </div>
       </section>
 
