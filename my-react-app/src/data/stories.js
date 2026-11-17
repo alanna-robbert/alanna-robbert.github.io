@@ -53,7 +53,7 @@ const stories = [
     displayDate: 'May 1, 2026',
     desc: 'An analysis of about 1.5 million Florida Lottery win records and nearly 100 court cases examines repeat big winners and whether their luck hides ticket theft, forgery or tax and child-support schemes. With Jack Jankowski.',
     topics: ['justice', 'economy'],
-    skills: ['data', 'investigative'],
+    skills: ['data', 'viz', 'investigative'],
   },
   {
     title: 'The Global Paraquat Trail',
@@ -73,7 +73,7 @@ const stories = [
     displayDate: 'March 9, 2026',
     desc: 'An analysis of bicycle theft patterns across the UF campus, identifying high-risk locations and seasonal trends in theft reports.',
     topics: ['campus', 'justice'],
-    skills: ['data'],
+    skills: ['data', 'viz'],
   },
   {
     title: 'Urban Waste, Rural Consequences',
@@ -93,7 +93,7 @@ const stories = [
     displayDate: 'Dec. 27, 2025',
     desc: 'Library usage patterns behind the decision to extend Marston Science Library hours despite low nighttime use.',
     topics: ['campus'],
-    skills: ['data'],
+    skills: ['data', 'viz'],
   },
   {
     title: 'Unemployment up among recent college graduates since COVID-19 pandemic',
@@ -113,7 +113,7 @@ const stories = [
     displayDate: 'Sept. 26, 2025',
     desc: 'A comparison of student government election turnout at UF and similar large public universities.',
     topics: ['campus', 'politics'],
-    skills: ['data'],
+    skills: ['data', 'viz'],
   },
   {
     title: 'Behind the Scenes in the Butterfly Rainforest',
@@ -223,7 +223,7 @@ const stories = [
     displayDate: 'May 28, 2025',
     desc: 'The experiences of transfer students at UF and efforts to build community and support networks for them.',
     topics: ['campus'],
-    skills: ['data', 'features'],
+    skills: ['data', 'viz', 'features'],
   },
   {
     title: 'The invasion of the fuzz: Tussock moth caterpillars crawl across north central Florida',
